@@ -1,0 +1,209 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+background:#f4f9ff;
+color:#333;
+}
+
+/* Header */
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 8%;
+background:white;
+box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+.logo{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.logo img{
+    height:70px;
+    width:auto;
+}
+
+.logo p{
+    font-size:12px;
+    color:#00bfa5;
+    letter-spacing:2px;
+    margin-top:3px;
+    font-weight:bold;
+}
+nav a{
+text-decoration:none;
+color:#1e88e5;
+margin-left:25px;
+font-weight:bold;
+transition:.3s;
+}
+
+nav a:hover{
+color:#00bfa5;
+}
+
+/* Hero */
+
+.hero{text-align:center;
+padding:50px 20px;
+}
+
+.hero img{
+width:100%;
+max-width:850px;
+height:auto;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.hero h1{
+margin-top:30px;
+color:#1e88e5;
+font-size:38px;
+}
+
+.hero p{
+margin:15px auto;
+max-width:600px;
+line-height:1.6;
+}
+
+.hero button{
+padding:12px 28px;
+border:none;
+background:#1e88e5;
+color:white;
+border-radius:8px;
+cursor:pointer;
+font-size:16px;
+margin-top:15px;
+}
+
+.hero button:hover{
+background:#00bfa5;
+}
+
+/* Books Page */
+
+.books-page{
+padding:50px 8%;
+text-align:center;
+}
+
+.books-page h1{
+color:#1e88e5;
+margin-bottom:40px;
+}
+
+.book-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+}
+
+.book-card{
+background:white;
+padding:15px;
+border-radius:12px;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+transition:.3s;
+}
+
+.book-card:hover{
+transform:translateY(-5px);
+}
+
+.book-card img{
+width:100%;
+height:260px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.book-card h3{
+margin-top:15px;
+}
+
+.book-card p{
+margin:8px 0;
+color:#666;
+}
+
+.book-card button,
+.back-btn{
+background:#1e88e5;
+color:white;
+border:none;
+padding:10px 20px;
+border-radius:8px;
+cursor:pointer;
+margin-top:10px;
+}
+
+.book-card button:hover,
+.back-btn:hover{
+background:#00bfa5;
+}
+
+/* Contact */
+
+.contact{
+background:white;
+width:90%;
+max-width:700px;
+margin:50px auto;
+padding:30px;
+text-align:center;
+border-radius:12px;
+box-shadow:0 5px 12px rgba(0,0,0,.1);
+}
+
+.contact h2{
+color:#1e88e5;
+margin-bottom:15px;
+}
+
+.contact p{
+margin:10px;
+}
+
+/* Footer */
+
+footer{
+background:#1e88e5;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:40px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+}
+
+nav{
+margin-top:15px;
+}
+
+.hero h1{
+font-size:28px;
+}
+
+.hero img{
+width:100%;
+}
+
+}
